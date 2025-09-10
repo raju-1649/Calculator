@@ -1,0 +1,99 @@
+body{
+    /* to center the cal in middle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f3f3;
+}
+.buttons{
+    /* flex-direction: column; */
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.6 );
+     font-size: 40px;
+}
+#display{
+    /* flex-direction: column; */
+    width: 96%;
+    height: 50%;
+    font-size: 40px;
+    margin-bottom: 10px;
+    /* padding-right: 300px; */
+    /* margin-left: 250px; */
+    padding: 8px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 200px; */
+}
+/* input div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,90px);
+    gap: 30px;
+    height: 50%;
+    /* width: 100%; */
+    padding: 30px;
+    /* : px; */
+     font-size:30px;
+     background: #17222d;
+     border-radius: 20px;
+
+}
+button{
+    height: 50px;
+    width: 100px;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+button:hover{
+    /* background-color: #7b28bb; */
+}
+.buttons:hover{
+   background: #17212c;
+}
+.adding{
+    grid-column: span 2;
+    width: 220%;
+    background: yellow;
+}
+.adding:hover{
+    background: yellow;
+    /* border: none; */
+
+}
+
+.clear{
+    /* background: #222539; */
+    /* color: #fff; */
+    /* border: none;     */
+}
+.clear:hover{
+    /* background: #a71d2a;  */
+}
+.slash,.add,.min,.mul{
+    background-color: yellow;
+}
+
+
+input:focus{
+    /* /* height: 200px; */
+    /* width: 200px; */ 
+    
+}
+#display::placeholder{
+    color: #aaa;
+    font-size: 20px;
+}
